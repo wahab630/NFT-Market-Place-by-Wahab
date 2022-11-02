@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0b1426;
+    color: white;
+}
+// --------------------------------------------- Header-------------------------
+.navbar{
+    background: #0b1426;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    a{
+        font-size: 1rem;
+        text-transform: capitalize;
+        color: white;
+    }
+     a:active{
+        color: blue;
+    }
+     .top-search{
+        border-radius: 0px 50px 50px 0px;
+        border: none;       
+        outline: none;
+        background: transparent;
+        color: rgb(227, 227, 227);
+        padding: 13px 16px;
+        width: 90%;
+     }
+     input{
+        
+        border-radius: 2rem;
+        padding: 3px 16px;
+        background: transparent;
+        color: rgb(227, 227, 227);
+        border: 1px solid rgb(227, 227, 227);
+     }
+    .header-full{
+        display: flex;
+        justify-content: space-between;
+      }
+      .topbar-btn{
+        background: linear-gradient(90deg,#1199fa,#11d0fa);
+        border-radius: 4px;
+        line-height: 22px;
+        padding: 8px 24px;
+      }
+}
+// -------------------------------------------------Footer-----------------------
+
+.footer{
+    background: #0b1426;
+    color: white;   
+    .footer-line{
+        border: 1px solid white ;
+        font-weight: bold;
+        color: white;
+    }
+    .footer-img{
+        height: 31px;
+        width: 200px;
+    }
+}
+//---------------------------------------------NFT------------------------------
+//-------------------------------------------HERO--------------------------------
+// .hero{
+
+// }
+
+//-----------------------------------------Subscription------------------------
+// .Subscription{
+//     background-image: url('https://crypto.com/nft/assets/images/drops/subscribe-v2.png');
+//     background-size: cover;
+// }
+
+//-----------------------------------------marketplace------------------------------
+.explore{
+    .filter{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        font-weight: 600;
+    }
+    .Price{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-weight: 600;
+    }
+    .img-fluid{
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .explore-card-b{
+        height: 50px;
+        background-color:#E1E1E1FF    ;
+        color: #626973FF;
+        font-size: 12px;
+        font-weight: 600;
+        width: 80%;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .explore-card-c{
+        height: 50px;
+        background-color: #1199FA1A  ;
+        color: blue;
+        font-weight: 600;
+        padding: 10px 10px;
+        border-radius: 10px;
+    }
+    .card-img-two{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    .listing{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        font-weight: 600;
+    }
+    .curation{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        font-weight: 600;
+    }
+    input.input-checks {
+        width: 20px;
+        height: 20px;
+    }
+   
+}
