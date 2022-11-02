@@ -180,9 +180,9 @@ const Explore = () => {
                           <img src={v.imgtwo} alt="no" />
                         </span>
                       </div>
-                      <small className="text-black "> {v.text} </small>
+                      <small className="text-black text-muted"> {v.text} </small>
                       <div className="d-flex justify-content-between">
-                        <span className="explore-card-b"> {v.innertext} </span>
+                        <span className="explore-card-b text-muted"> {v.innertext} </span>
                         <span className="explore-card-c">Buy</span>
                       </div>
                     </div>
