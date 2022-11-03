@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
+import Button from "react-bootstrap/Button";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import { FaAlignJustify } from "react-icons/fa";
 
 const Header = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
-      <div className="navbar sticky-top">
+      <div className="navbar sticky-top d-lg-block d-none">
         <div className="container-fluid">
           <div className="row">
             <div className="col">
@@ -34,11 +42,11 @@ const Header = () => {
                   </Link>
                 </span>
                 <span className="ms-5 mt-2">
-                  <Link to="" className="  text-decoration-none ">
+                  <Link to="/drops" className="  text-decoration-none ">
                     drops
                   </Link>
                 </span>
-                
+
                 <div className="dropdown ms-4">
                   <button
                     className="btn dropdown-btn dropdown-toggle"
@@ -56,7 +64,7 @@ const Header = () => {
                     </li>
                     <li>
                       <a className="dropdown-item text-black" href="no">
-                      French
+                        French
                       </a>
                     </li>
                     <li>
@@ -71,8 +79,8 @@ const Header = () => {
                     Create
                   </button>
                 </span>
-               
-                <span className=" mt-2"> 
+
+                <span className=" mt-2">
                   <Link to="" className="ms-5  text-decoration-none">
                     sign in
                   </Link>
@@ -92,6 +100,88 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <Button className="d-lg-none d-block canvas-btn" onClick={handleShow}>
+        <FaAlignJustify size={25} />
+      </Button>
+
+      <Offcanvas
+        show={show}
+        onHide={handleClose}
+        
+        className="canvas"
+      >
+        <Offcanvas.Header closeButton closeVariant="white">
+          <Offcanvas.Title>
+            <span className="">
+              <Link className="navbar-brand" to="/">
+                <img src="assets/loggo.jpg" className="logo" alt="no" />
+                NFT
+              </Link>
+            </span>
+          </Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        <span className="  d-block  mt-2">
+                  <Link to="/" className=" text-decoration-none text-white  ">
+                    Marketplace
+                  </Link>
+                </span>
+                <span className=" d-block mt-2">
+                  <Link to="/drops" className="  text-decoration-none text-white ">
+                    drops
+                  </Link>
+                </span>
+
+                <div className="dropdown ">
+                  <button
+                    className="btn dropdown-btn  ps-0 fw-bold dropdown-toggle text-white"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Brands
+                  </button>
+                  <ul className="dropdown-menu ">
+                    <li>
+                      <a className="dropdown-item text-black" href="no">
+                        English
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item text-black" href="no">
+                        French
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item text-black" href="no">
+                        German
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <span className=" d-block ">
+                  <button className="btn topbar-btn text-white fw-bold ">
+                    Create
+                  </button>
+                </span>
+
+                <span className=" fw-bold mt-2 d-block">
+                  <Link to="" className="d-block  text-white text-decoration-none">
+                    sign in
+                  </Link>
+                </span>
+                <span className=" fw-bold d-block mt-2">
+                  <Link to="" className=" text-white  text-decoration-none">
+                    sign up
+                  </Link>
+                </span>
+                <span className="d-block fw-bold mt-2">
+                  <Link to="" className=" text-white text-decoration-none">
+                    english
+                  </Link>
+                </span>
+        </Offcanvas.Body>
+      </Offcanvas>
     </>
   );
 };
