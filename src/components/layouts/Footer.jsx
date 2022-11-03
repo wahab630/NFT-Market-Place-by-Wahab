@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMedium, FaTwitter, FaTelegram } from "react-icons/fa";
+import { FaDiscord, FaTwitter, FaTelegram,FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,22 +9,22 @@ const Footer = () => {
           <div className="row">
             <div className="col   ">
               <ul className="list-unstyled d-flex ">
-                <li className="me-2">
+                <li className="me-4">
                   {" "}
-                  <FaMedium size={30} />{" "}
+                  <FaInstagram size={25} />{" "}
                 </li>
-                <li className="me-2">
+                <li className="me-4">
                   {" "}
-                  <FaTwitter size={30} />{" "}
+                  <FaTwitter size={25 } />{" "}
                 </li>
 
-                <li className="me-2">
+                <li className="me-4">
                   {" "}
-                  <FaMedium size={30} />{" "}
+                  <FaDiscord size={25} className="footer-icon" />{" "}
                 </li>
                 <li className="me-2">
                   {" "}
-                  <FaTelegram size={30} />{" "}
+                  <FaTelegram size={25} />{" "}
                 </li>
               </ul>
             </div>
@@ -38,10 +38,11 @@ const Footer = () => {
               </div>
               <div>
                 <ul className="list-unstyled d-flex ">
-                  <li className="me-2">Help Center</li>
-                  <li className="me-2">Blog</li>
-                  <li className="me-2">T&C</li>
-                  <li className="me-2">Privacy Notice</li>
+                  <li className="me-3 small text-muted">Help Center</li>
+                  <li className="me-3 small text-muted">Blog</li>
+                  <li className="me-3 small text-muted">T&C</li>
+                  <li className="me-3 small text-muted">Privacy Notice</li>
+                  <li className="me-3 small text-muted">Cookies Preference</li>
                 </ul>
               </div>
             </div>

@@ -94,7 +94,7 @@ const Explore = () => {
 
   const navigate = useNavigate();
 
-  const goToContact = () => {
+  const goToCardOne = () => {
     navigate("/cardOne");
   };
 
@@ -102,33 +102,53 @@ const Explore = () => {
     <>
       <div className="explore">
         <div className="container-fluid">
+        <h4 className=" ">Explore</h4>
           <div className="row">
-            <div className="col-lg-3 mt-5 pt-5 " >
+            <div className="col-lg-3  pt-5  explore-left" >
+              
               <ProSidebarProvider>
-                <Sidebar width="270px">
+                <Sidebar width="300px">
                   <Menu>
+                    
+                  <MenuItem> <span className="fw-bold">Filters</span> </MenuItem>
                     <SubMenu label="Listing Types">
-                      <MenuItem> Buy Now </MenuItem>
-                      <MenuItem> Line charts </MenuItem>
+                      <MenuItem  > 
+                      <input type="checkbox" className="input-checks me-2 " />
+                       <span>Buy Now</span>
+                      </MenuItem>
+                      <MenuItem > 
+                      <input type="checkbox" className="input-checks me-2 " />
+                       <span className="pb-2">Auction</span>
+                      </MenuItem>
                     </SubMenu>
                     <SubMenu label="Curation">
-                      <MenuItem> Pie charts </MenuItem>
-                      <MenuItem> Line charts </MenuItem>
+                    <MenuItem  > 
+                      <input type="checkbox" className="input-checks me-2 " />
+                       <span>Curated</span>
+                      </MenuItem>
+                      <MenuItem > 
+                      <input type="checkbox" className="input-checks me-2 " />
+                       <span className="pb-2">Non-Curated</span>
+                      </MenuItem>
                     </SubMenu>
                     <SubMenu label="Price">
-                      <MenuItem> Pie charts </MenuItem>
-                      <MenuItem> Line charts </MenuItem>
+                      <MenuItem > 
+                     
+                      <span><input type="text" /></span>
+                      </MenuItem>
+                      
                     </SubMenu>
                     <SubMenu label="Collections">
-                      <MenuItem> Pie charts </MenuItem>
+                   
                       <MenuItem> Line charts </MenuItem>
                     </SubMenu>
                   </Menu>
                 </Sidebar>
+                
               </ProSidebarProvider>
             </div>
 
-            {/* <div className="col-lg-3 explore-left ">
+            {/* <div className="col-lg-3  ">
               <h4 className="mb-4 ">Explore</h4>
               <div className="filter">
                 <span>Filters</span>
@@ -191,14 +211,14 @@ const Explore = () => {
               </div>
             </div> */}
             <div className="col-lg-9  explore-right">
-              <div className="row gy-4 mt-5">
+              <div className="row gy-4 ">
                 {data.map((v, i) => {
                   return (
                     <>
                       <div className="col-lg-4">
                         <div
                           className="card border-0  "
-                          onClick={() => goToContact()}
+                          onClick={() => goToCardOne()}
                         >
                           <img className="img-fluid" src={v.img} alt="no" />
                           <div className="card-body">

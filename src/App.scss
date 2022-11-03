@@ -7,6 +7,7 @@
   
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -129,6 +130,11 @@ body {
     height: 31px;
     width: 200px;
   }
+  .footer-icon{
+    background-color: white;
+    color: black;
+    padding: 3px;
+  }
 }
 //---------------------------------------------NFT------------------------------
 //-------------------------------------------HERO--------------------------------
@@ -145,6 +151,7 @@ body {
 //-----------------------------------------marketplace------------------------------
 //-----------------------------------------explore----------------------------
 .explore {
+  
   .filter {
     display: flex;
     justify-content: space-between;
@@ -206,6 +213,7 @@ body {
   }
   .explore-left {
     position: fixed;
+    display: block;
     ::-webkit-scrollbar {
       width: 5px;
     }
@@ -218,7 +226,9 @@ body {
       border-radius: 10px;
     }
   }
-  
+  .explore-right{
+    margin-left: auto;
+  }
   // overflow: hidden;
 }
 

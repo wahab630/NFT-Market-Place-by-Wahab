@@ -1,7 +1,17 @@
 import React from "react";
-import { FaRegHeart, FaEye, FaReply, FaEllipsisH } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
+
+import { FaRegHeart, FaEye, FaReply, FaEllipsisH,FaCaretLeft } from "react-icons/fa";
+
 
 const CardOne = () => {
+
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate("/");
+  };
+
+
   return (
     <>
       <div className="cardone">
@@ -16,7 +26,7 @@ const CardOne = () => {
             </div>
             <div className="col-lg-8 col-12 text-black">
               <div>
-                <button className="btn fw-bold back-btn p-0">Back</button>
+                <button className="btn  back-btn p-0" onClick={() => goBack()}><FaCaretLeft/> Back</button>
               </div>
               <div className="d-flex justify-content-between mb-3">
                 <div className="">
