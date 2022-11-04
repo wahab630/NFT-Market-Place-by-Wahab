@@ -2,9 +2,11 @@
 .sc-pyfCe{
   background: #0b1426;
 }
-.sc-eDvSVe {
+.sc-eDvSVe:hover{
   background: #0b1426;
-  
+}
+.sc-eDvSVe {
+  background: #0b1426;  
 }
 
 
@@ -161,7 +163,7 @@ body {
 }
 //-----------------------------------------explore----------------------------
 .explore {
-  // @import '~react-pro-sidebar/dist/scss/styles.scss';
+ 
 
   .filter {
     display: flex;
@@ -218,9 +220,9 @@ body {
     height: 20px;
   }
   .explore-left {
-    // position: sticky;
-    // top: 0;
-    // display: block;
+    position: sticky;
+    top: 0;
+    display: block;
     ::-webkit-scrollbar {
       width: 5px;
     }

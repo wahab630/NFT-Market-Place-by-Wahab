@@ -6,7 +6,7 @@ const Esidebar = () => {
     <>
       <div className="container">
         <div className="row">
-          <div className="col-lg-3">
+          <div className="col-lg-3 explore-left">
             <Sidebar width="300px">
               <Menu>
                 <span className="fw-bold">Filters</span>
