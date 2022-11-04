@@ -149,9 +149,20 @@ body {
 // }
 
 //-----------------------------------------marketplace------------------------------
+//----------------------------------------multicarousel---------------------------
+.mutlicarousel{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .img-fluid{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+  }
+}
 //-----------------------------------------explore----------------------------
 .explore {
-  
+  // @import '~react-pro-sidebar/dist/scss/styles.scss';
+
   .filter {
     display: flex;
     justify-content: space-between;
@@ -201,19 +212,15 @@ body {
     border-bottom: 1px solid white;
     font-weight: 600;
   }
-  .curation {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-    font-weight: 600;
-  }
+ 
   input.input-checks {
     width: 20px;
     height: 20px;
   }
   .explore-left {
-    position: fixed;
-    display: block;
+    // position: sticky;
+    // top: 0;
+    // display: block;
     ::-webkit-scrollbar {
       width: 5px;
     }
@@ -235,11 +242,10 @@ body {
 //-----------------------------------------card one-------------------------
 .cardone {
   background-color: white;
-  height: 85vh;
+  padding-top: 90px;
+  padding-bottom: 90px;
   overflow: hidden;
-  .container {
-    padding-top: 90px;
-  }
+ 
   .back-btn{
     color: blue;
   }
