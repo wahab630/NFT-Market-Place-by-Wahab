@@ -2,7 +2,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ProSidebarProvider } from "react-pro-sidebar";
 import Esidebar from "./Esidebar";
-// import { FaAngleUp, FaAngleDown, FaAngleLeft, FaBars } from "react-icons/fa";
 
 const Explore = () => {
   const data = [
@@ -67,15 +66,6 @@ const Explore = () => {
       innertext: "from",
     },
 
-    // {
-    //     img:"",
-    //     imgone:"",
-    //     caption:"",
-    //     imgtwo:"",
-    //     name:"",
-    //     text:"",
-    //     innertext:"",
-    // },
     // {
     //     img:"",
     //     imgone:"",

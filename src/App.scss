@@ -1,15 +1,15 @@
 
-.sc-pyfCe{
-  background: #0b1426;
-}
-.sc-eDvSVe:hover{
-  background: #0b1426;
-}
+
+
 .sc-eDvSVe {
+  background: #0b1426;  // andr se krna k liya
+}
+.lkTtqM {
   background: #0b1426;  
 }
-
-
+// .eVPmrC:hover{
+//   background: #0b1426;  
+// }
 * {
   margin: 0;
   padding: 0;
@@ -37,8 +37,7 @@ body {
   margin-right: 10px;
   border-radius: 50%;
 }
-.canvas{
-  
+.canvas{  
   background-color:#0b1426;
 }
 ::-webkit-scrollbar {
@@ -162,24 +161,7 @@ body {
   }
 }
 //-----------------------------------------explore----------------------------
-.explore {
- 
-
-  .filter {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
-    font-weight: 600;
-  }
-  .Price {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid white;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-weight: 600;
-  }
+.explore { 
   .img-fluid {
     width: 100%;
     height: auto;
@@ -208,37 +190,17 @@ body {
     width: 20px;
     border-radius: 50%;
   }
-  .listing {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid white;
-    font-weight: 600;
-  }
+ 
  
   input.input-checks {
     width: 20px;
     height: 20px;
   }
-  .explore-left {
-    position: sticky;
-    top: 0;
-    display: block;
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
-    ::-webkit-scrollbar-track {
-      box-shadow: inset 0 0 5px grey;
-      border-radius: 10px;
-    }
-    ::-webkit-scrollbar-thumb {
-      background: brown;
-      border-radius: 10px;
-    }
-  }
+ 
   .explore-right{
     margin-left: auto;
   }
-  // overflow: hidden;
+ 
 }
 
 //-----------------------------------------card one-------------------------
@@ -277,3 +239,4 @@ body {
     max-width: 100%;
   }
 }
+
