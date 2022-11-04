@@ -1,14 +1,16 @@
-
-
-
+.sc-eDvSVe:hover {
+  background: #0b1426;
+}
 .sc-eDvSVe {
-  background: #0b1426;  // andr se krna k liya
+  background: #0b1426; // andr se krna k liya
+  font-weight: 700;
 }
 .lkTtqM {
-  background: #0b1426;  
+  background: #0b1426;
 }
-// .eVPmrC:hover{
-//   background: #0b1426;  
+// .gnJkew{
+//   background-color: white;
+
 // }
 * {
   margin: 0;
@@ -19,7 +21,7 @@ body {
   background: #0b1426;
   color: white;
 }
-.canvas-btn{
+.canvas-btn {
   background-color: transparent;
   border: none;
 }
@@ -37,8 +39,8 @@ body {
   margin-right: 10px;
   border-radius: 50%;
 }
-.canvas{  
-  background-color:#0b1426;
+.canvas {
+  background-color: #0b1426;
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -57,7 +59,7 @@ body {
   color: white;
   padding-top: 17px;
   padding-bottom: 10px;
- 
+
   .logo {
     height: 40px;
     width: 40px;
@@ -131,7 +133,7 @@ body {
     height: 31px;
     width: 200px;
   }
-  .footer-icon{
+  .footer-icon {
     background-color: white;
     color: black;
     padding: 3px;
@@ -151,17 +153,26 @@ body {
 
 //-----------------------------------------marketplace------------------------------
 //----------------------------------------multicarousel---------------------------
-.mutlicarousel{
+.mutlicarousel {
   padding-top: 20px;
   padding-bottom: 20px;
-  .img-fluid{
-    height: 200px;
-    width: 200px;
+  .react-multi-carousel-item {
+    max-width: 249px;
+    min-width: 230px;
+  }
+  .img-fluid {
+    height: 216px;
+    width: 216px;
+    object-fit: cover;
     border-radius: 20px;
+    transition: 0.5s ease-in-out;
+  }
+  .img-fluid:hover {
+    transform: scale(1.1);
   }
 }
 //-----------------------------------------explore----------------------------
-.explore { 
+.explore {
   .img-fluid {
     width: 100%;
     height: auto;
@@ -190,17 +201,15 @@ body {
     width: 20px;
     border-radius: 50%;
   }
- 
- 
+
   input.input-checks {
     width: 20px;
     height: 20px;
   }
- 
-  .explore-right{
+
+  .explore-right {
     margin-left: auto;
   }
- 
 }
 
 //-----------------------------------------card one-------------------------
@@ -209,8 +218,8 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
   overflow: hidden;
- 
-  .back-btn{
+
+  .back-btn {
     color: blue;
   }
   .card-one-img2 {
@@ -221,7 +230,7 @@ body {
   .img {
     position: relative;
   }
-  .cardone-btn{
+  .cardone-btn {
     border: 1px solid rgb(148, 155, 164);
     border-radius: 2rem;
     padding: 1px 8px;
@@ -239,4 +248,3 @@ body {
     max-width: 100%;
   }
 }
-

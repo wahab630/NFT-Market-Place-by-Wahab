@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-lg-6 mb-3 d-flex justify-content-between">
+            <div className="col-lg-6 mb-3 ">
               <div>
                 <small className="">
                   Copyright © 2022 Crypto.com. All rights reserved.
@@ -38,8 +38,8 @@ const Footer = () => {
               </div>
              
             </div>
-            <div className="col-lg-6 d-flex">
-            <div className="flex-end d-flex">
+            <div className="col-lg-6 d-flex justify-content-end">
+            <div>
                 <ul className="list-unstyled d-flex ">
                   <li className="me-3 small text-muted">Help Center</li>
                   <li className="me-3 small text-muted">Blog</li>

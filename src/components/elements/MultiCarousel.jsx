@@ -43,14 +43,19 @@ const MultiCarousel = () => {
                 arrows={false}
                 keyBoardControl={true}
                 customTransition="all .5"
+                // itemClass={styles.carouselItem} 
+                partialVisible={false}
+                // renderButtonGroupOutside={true} 
+                // customButtonGroup={<ButtonGroup />}
                 transitionDuration={500}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 //   deviceType={this.props.deviceType}
                 dotListClass="custom-dot-list-style"
-                itemClass="carousel-item-padding-40-px"
+                // itemClass="carousel-item-padding-0-px"
               >
-                <div>
+                <button>hello world</button>
+                <div className="outerth">
                   <img
                     className="img-fluid"
                     src="https://d2vi0z68k5oxnr.cloudfront.net/e1fea25f-6ae8-4317-8fad-dfc94c03c3ba/original.png?d=lg-cover"
