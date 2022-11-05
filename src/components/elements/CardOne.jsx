@@ -1,10 +1,15 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
-
+import { useLocation ,useNavigate} from "react-router-dom";
 import { FaRegHeart, FaEye, FaReply, FaEllipsisH,FaCaretLeft } from "react-icons/fa";
 
 
 const CardOne = () => {
+
+  
+  const  location  = useLocation();
+  // console.log(location.state)
+  const value =location.state;
+ 
 
   const navigate = useNavigate();
   const goBack = () => {
@@ -16,17 +21,21 @@ const CardOne = () => {
     <>
       <div className="cardone">
         <div className="container">
-          <div className="row">
+          <div className="row">       
+
             <div className="col-lg-4 col-12">
               <img
                 className="cardone-img img-fluid"
-                src="https://d2vi0z68k5oxnr.cloudfront.net/efbf901e-4700-4d5f-b0ee-6ff0b47e0989/original.png?d=sm-cover"
+                src={value.img}
                 alt="no"
               />
             </div>
             <div className="col-lg-8 col-12 text-black">
               <div>
-                <button className="btn  back-btn p-0" onClick={() => goBack()}><FaCaretLeft/> Back</button>
+                <button className="btn  back-btn p-0" 
+                onClick={() => goBack()}
+                
+                ><FaCaretLeft/> Back</button>
               </div>
               <div className="d-flex justify-content-between mb-3">
                 <div className="">
@@ -52,9 +61,9 @@ const CardOne = () => {
               </div>
               <div>
                 <span>Chain:</span>
-                <span className="fw-bold ms-2">Crypto.org Chain</span>{" "}
+                <span className="fw-bold ms-2">{value.cronos}</span>{" "}
                 <span>
-                  <img src="assets/round.svg" alt="no" />
+                  <img src={value.imgthree} alt="no" />
                 </span>
               </div>
               <div className="d-flex flex-wrap mt-3">
@@ -67,7 +76,7 @@ const CardOne = () => {
                         className="card-one-img2"
                       />
                       <img
-                        src="assets/tick.svg"
+                        src={value.imgtwo}
                         alt="no"
                         className="card-one-img3"
                       />
@@ -82,12 +91,12 @@ const CardOne = () => {
                   <div className="me-3 ">
                     <div className="img">
                       <img
-                        src="https://d2vi0z68k5oxnr.cloudfront.net/48da74e2-4f65-416d-932a-2654657b73c7/original.gif"
+                        src={value.imgone}
                         alt="no"
                         className="card-one-img2"
                       />
                       <img
-                        src="assets/tick.svg"
+                        src={value.imgtwo}
                         alt="no"
                         className="card-one-img3"
                       />
@@ -95,14 +104,14 @@ const CardOne = () => {
                   </div>
                   <div>
                     <small className="text-muted">Collection</small>
-                    <div>Cryptoverse</div>
+                    <div>{value.caption}</div>
                   </div>
                 </div>
               </div>
               <div className="mt-3">
                 <small>381 Edition minted</small>
                 <div className="d-flex">
-                  <h2>Pâtissier Lionne</h2>
+                  <h2>{value.name}</h2>
                   <button className="btn text-muted ms-3 cardone-btn">
                     <small>Marketplace</small>
                   </button>
