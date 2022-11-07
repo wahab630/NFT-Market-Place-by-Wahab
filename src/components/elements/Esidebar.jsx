@@ -4,7 +4,7 @@ import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 const Esidebar = () => {
   return (
     <>
-      <div className="container sidebar-left" >
+      <div className="container  sidebar-left" >
         <div className="row">
           <div className="col-lg-3 ">
             <Sidebar width="300px">

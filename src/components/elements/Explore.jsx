@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ProSidebarProvider } from "react-pro-sidebar";
+import { FaExchangeAlt} from "react-icons/fa";
 import Esidebar from "./Esidebar";
 
 const Explore = () => {
@@ -111,11 +112,44 @@ const Explore = () => {
 
          
             <div className="col-lg-9  explore-right">
+              <div className="mb-2 d-flex justify-content-between">
+                <span></span>
+                <div className="dropdown ms-4 cards-top-btn">
+                <FaExchangeAlt/> 
+                  <button
+                    className="btn dropdown-btn dropdown-toggle "
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sort By
+                  </button>
+                  <ul className="dropdown-menu  ">
+                    <li>
+                      <a className="dropdown-item text-black" href="no">
+                      Most relevent
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item text-black" href="no">
+                      Recently
+                      </a>
+                    </li>
+                    <li>
+                      <a className="dropdown-item text-black" href="no">
+                      Newest
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+               
+                
+              </div>
               <div className="row gy-4 ">
                 {data.map((v, i) => {
                   return (
                     <>
-                      <div className="col-lg-4">
+                      <div className="col-lg-4 col-md-6 ">
                         <div
                           className="card border-0  "
                           onClick={()=>

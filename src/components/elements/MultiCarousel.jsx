@@ -15,19 +15,19 @@ const MultiCarousel = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
-    }
+      items: 2,
+    },
   };
 
   return (
     <>
       <div className="mutlicarousel">
         <div className="container-fluid">
-            <h5 className="fw-bold mb-4">Top Collections</h5>
+          <h5 className="fw-bold mb-4">Top Collections</h5>
           <div className="row">
             <div className="col">
               <Carousel
@@ -40,84 +40,125 @@ const MultiCarousel = () => {
                 //   autoPlay={this.props.deviceType !== "mobile" ? true : false}
                 autoPlaySpeed={1000}
                 autoPlay={false}
-                arrows={false}
+                arrows={true}
                 keyBoardControl={true}
                 customTransition="all .5"
-                // itemClass={styles.carouselItem} 
+                // itemClass={styles.carouselItem}
                 partialVisible={false}
-                // renderButtonGroupOutside={true} 
+                // renderButtonGroupOutside={true}
                 // customButtonGroup={<ButtonGroup />}
                 transitionDuration={500}
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 //   deviceType={this.props.deviceType}
                 dotListClass="custom-dot-list-style"
-                // itemClass="carousel-item-padding-0-px"
+                itemClass="carousel-item-padding-0-px"
               >
-                <button>hello world</button>
-                <div className="outerth">
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/e1fea25f-6ae8-4317-8fad-dfc94c03c3ba/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="first">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/2ba6d3df-5a6a-4b2b-814e-98f0af890eb1/original.jpeg?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="second">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/9e167897-8383-4b46-ba88-ae8bc76154e1/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="third">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/1a157436-e668-451b-b65c-2b2233e008c4/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="fourth">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/47ec3963-dd1e-4a05-83c5-4cc96ece5120/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="five">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/bd58d469-3385-4e12-be4a-696792cdcc47/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="six">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/3d1c8681-5943-456d-9606-823a937b9597/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="seven">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
-                <div>
-                  {" "}
-                  <img
-                    className="img-fluid"
-                    src="https://d2vi0z68k5oxnr.cloudfront.net/3c21cdf8-0603-48c8-a1d4-6e7a1bb4228c/original.png?d=lg-cover"
-                    alt="no"
-                  />
+                <div className="eight">
+                  <div className="inner">
+                    <img
+                      src="https://d2vi0z68k5oxnr.cloudfront.net/cf1d2314-9d23-4564-aa76-38ed6b4e77ad/original.png?d=sm-logo"
+                      className="below-img me-2"
+                      alt="no"
+                    />
+                    <span>Art Blocks</span>
+                    <span>
+                      <img src="assets/tick.svg" alt="no" />
+                    </span>
+                  </div>
                 </div>
+                
               </Carousel>
             </div>
           </div>

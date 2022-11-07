@@ -1,17 +1,5 @@
-.sc-eDvSVe:hover {
-  background: #0b1426;
-}
-.sc-eDvSVe {
-  background: #0b1426; // andr se krna k liya
-  font-weight: 700;
-}
-.lkTtqM {
-  background: #0b1426;
-}
-// .gnJkew{
-//   background-color: white;
 
-// }
+
 * {
   margin: 0;
   padding: 0;
@@ -156,23 +144,155 @@ body {
 .mutlicarousel {
   padding-top: 20px;
   padding-bottom: 20px;
-  .react-multi-carousel-item {
-    max-width: 249px;
-    min-width: 230px;
-  }
-  .img-fluid {
-    height: 216px;
-    width: 216px;
-    object-fit: cover;
+  // .react-multi-carousel-item {
+  //   max-width: 249px;
+  //   min-width: 230px;
+  // }
+  .first {
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/e1fea25f-6ae8-4317-8fad-dfc94c03c3ba/original.png?d=lg-cover ");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-position: center;
     border-radius: 20px;
     transition: 0.5s ease-in-out;
+    position: relative;
   }
-  .img-fluid:hover {
+  .second {
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/2ba6d3df-5a6a-4b2b-814e-98f0af890eb1/original.jpeg?d=lg-cover ");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+    border-radius: 20px;
+    position: relative;
+  }
+  .third {
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/9e167897-8383-4b46-ba88-ae8bc76154e1/original.png?d=lg-cover");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-position: center;
+    position: relative;
+    transition: 0.5s ease-in-out;
+  }
+  .fourth {
+    transition: 0.5s ease-in-out;
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/1a157436-e668-451b-b65c-2b2233e008c4/original.png?d=lg-cover");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .five {
+    transition: 0.5s ease-in-out;
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/47ec3963-dd1e-4a05-83c5-4cc96ece5120/original.png?d=lg-cover");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+  }
+  .six {
+    transition: 0.5s ease-in-out;
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/bd58d469-3385-4e12-be4a-696792cdcc47/original.png?d=lg-cover");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .seven {
+    transition: 0.5s ease-in-out;
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/3d1c8681-5943-456d-9606-823a937b9597/original.png?d=lg-cover");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .eight {
+    transition: 0.5s ease-in-out;
+    background-image: url("https://d2vi0z68k5oxnr.cloudfront.net/3c21cdf8-0603-48c8-a1d4-6e7a1bb4228c/original.png?d=lg-cover");
+    background-size: cover;
+    height: 200px;
+    background-position: center;
+    width: 200px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .below-img {
+    height: 31px;
+    width: 31px;
+    border-radius: 50%;
+  }
+  .inner {
+    position: absolute;
+    top: 165px;
+    left: 10px;
+  }
+ 
+  .first:hover {
+    border: 1px solid blue;
     transform: scale(1.1);
+  }
+  .second:hover {
+    
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  .third:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  .fourth:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  .five:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  .six:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  .seven:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  .eight:hover {
+    border: 1px solid blue;
+    transform: scale(1.1);
+  }
+  @media only screen and (max-width: 600px){
+    .first,.second,.third,.fourth,.five,.six,.seven,.eight{
+      height: 150px;
+      width: 150px;
+    }
+    .inner {     
+      top: 115px;
+      left: 10px;
+    }
   }
 }
 //-----------------------------------------explore----------------------------
 .explore {
+  .cards-top-btn{
+    background-color: #0b1426;
+    padding: 5px 15px;
+    border-radius: 2rem;
+    border: 1px solid white;
+    outline: none;
+    font-weight: 600;
+  }
   .img-fluid {
     width: 100%;
     height: auto;
@@ -206,10 +326,24 @@ body {
     width: 20px;
     height: 20px;
   }
-
+.dropdown-btn{
+  font-weight: 600;
+  color: white;
+}
+.dropdown-btn:active{
+  font-weight: 600;
+  border: none;
+  outline: none;
+  color: white;
+}
   .explore-right {
     margin-left: auto;
   }
+  // @media only screen and (max-width: 1200px){
+  //   .explore-left{
+  //     display: none;
+  //   }
+  // }
 }
 
 //-----------------------------------------card one-------------------------
@@ -218,7 +352,14 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
   overflow: hidden;
-
+  .anchor-below {
+    border: 1px solid #1199fa;
+    border-radius: 4px;
+    color: #1199fa;
+    text-decoration: none;
+    padding: 8px 10px;
+    text-transform: capitalize;
+  }
   .back-btn {
     color: blue;
   }
@@ -246,5 +387,52 @@ body {
     border-radius: 10px;
     height: auto;
     max-width: 100%;
+  }
+}
+//----------------------------------------------------Esidebar---------------------------
+.sidebar-left{
+  position: sticky;
+  top: 4rem;
+//   .gnJkew{
+//   background-color: rgb(72, 144, 9);
+
+// }
+// .sc-ksBlkl{
+//   background-color: rgb(144, 9, 9);
+
+// }
+// .sc-ksBlkl:hover{
+//   background-color: rgb(28, 5, 5) !important;
+//   color: white;
+
+// }
+  .sc-eDvSVe {
+    background: #0b1426; // bahir se krna k liya
+    font-weight: 700;
+    color: white;
+  }
+  .eVPmrC {
+    background: #0b1426;
+    
+  }
+  a{
+    color: white;
+  }
+  .eVPmrC:hover{
+    background: #0b1426 !important;
+    color: white;
+    
+  }
+  // .ktVuSn {
+  //   background: #0b1426;
+  // }
+  // .sc-eDvSVe:hover {
+  //   background: #0b260f I !important;  // andr se krna k liya
+  // }
+  .lkTtqM {
+    background: #0b1426;
+  }
+  .lkTtqM:hover {
+    background: #0b1426 !important;// list types walo ka bahir se
   }
 }

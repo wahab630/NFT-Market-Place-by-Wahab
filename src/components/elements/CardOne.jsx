@@ -1,41 +1,39 @@
 import React from "react";
-import { useLocation ,useNavigate} from "react-router-dom";
-import { FaRegHeart, FaEye, FaReply, FaEllipsisH,FaCaretLeft } from "react-icons/fa";
-
+import { useLocation, useNavigate } from "react-router-dom";
+import {
+  FaRegHeart,
+  FaCopy,
+  FaEye,
+  FaReply,
+  FaEllipsisH,
+  FaCaretLeft,
+  FaAngleDown,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 const CardOne = () => {
-
-  
-  const  location  = useLocation();
+  const location = useLocation();
   // console.log(location.state)
-  const value =location.state;
- 
+  const value = location.state;
 
   const navigate = useNavigate();
   const goBack = () => {
     navigate("/");
   };
 
-
   return (
     <>
       <div className="cardone">
         <div className="container">
-          <div className="row">       
-
+          <div className="row">
             <div className="col-lg-4 col-12">
-              <img
-                className="cardone-img img-fluid"
-                src={value.img}
-                alt="no"
-              />
+              <img className="cardone-img img-fluid" src={value.img} alt="no" />
             </div>
             <div className="col-lg-8 col-12 text-black">
               <div>
-                <button className="btn  back-btn p-0" 
-                onClick={() => goBack()}
-                
-                ><FaCaretLeft/> Back</button>
+                <button className="btn  back-btn p-0" onClick={() => goBack()}>
+                  <FaCaretLeft /> Back
+                </button>
               </div>
               <div className="d-flex justify-content-between mb-3">
                 <div className="">
@@ -117,7 +115,78 @@ const CardOne = () => {
                   </button>
                 </div>
               </div>
-              <div > <h3>$2300</h3></div>
+              <div>
+                {" "}
+                <h3>$2300</h3>
+              </div>
+              <p>The first CyborgSwap NFT collection</p>
+              <a href="no" className="anchor-below">
+                Art
+              </a>
+              <a href="no" className="anchor-below ms-2">
+                Crosschain
+              </a>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 ">
+              <div className="card text-black mt-3">
+                <div className="card-body">
+                  <div className="d-flex justify-content-between">
+                    <span>Properties</span>{" "}
+                    <span>
+                      <FaAngleDown />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="card text-black mt-3">
+                <div className="card-body">
+                  <div className="d-flex justify-content-between">
+                    <span>View Crypto.org Chain details</span>{" "}
+                    <span>
+                      <FaExternalLinkAlt />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="card text-black mt-3">
+                <div className="card-body">
+                  <div className="d-flex justify-content-between">
+                    <span>View Cronoscan details</span>{" "}
+                    <span>
+                      <FaExternalLinkAlt />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-8 text-black mt-3 ">
+              <span className="fw-bold ">Ownership</span>
+              <span className="fw-bold ms-5">History</span>
+              <span className="fw-bold ms-5">Offers</span>
+              <div className="mt-3 ">
+                <div className="card w-100 ">
+                  <div className="card-body d-flex justify-content-between">
+                    <div className="d-flex">
+                      <img
+                        src={value.imgone}
+                        alt="no"
+                        className="card-one-img2 me-3"
+                      />
+                     
+                      <div>
+                        <small className="text-muted">Owner</small>
+                        <div className="fw-bold"> Don Tom</div>
+                      </div>
+                    </div>
+                    <div>
+                      <span className="me-2">cro14cg7whz5lgg2sv</span>
+                      <span><FaCopy/></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
